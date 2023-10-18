@@ -160,17 +160,10 @@
 
 .advantages {
   padding: 70px 0 80px 0;
-  color: #F6F6F6;
-}
-.advantages__header {
-  margin: 73px 0 65px 0;
-  color: #0D0D0D;
-  text-align: center;
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 30px;
-  line-height: 30px;
+  background-color: #f6f6f6;
 }
 .advantages__wrapper {
+  margin-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +171,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.advantages__icons {
+.advantages__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,24 +184,22 @@
           align-items: center;
   max-width: 238px;
 }
-.advantages__subheader {
-  color: #0D0D0D;
-  font-family: "Museo Sans Cyrl 700";
+.advantages__subtitle {
+  margin-top: 38px;
+  color: #0d0d0d;
   font-size: 18px;
-  margin-top: 38px;
-  margin-top: 38px;
+  font-weight: 700;
 }
-.advantages__title {
-  color: #0D0D0D;
-  text-align: center;
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 14px;
-  line-height: 18px;
+.advantages__descr {
   margin-top: 26px;
+  color: #0d0d0d;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
 }
-.advantages__title a {
-  color: #F00;
-  text-decoration-line: underline;
+.advantages__descr a {
+  color: #ff0000;
+  text-decoration: underline;
 }
 
 .consultation {
