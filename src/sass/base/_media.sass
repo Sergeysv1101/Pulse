@@ -1,4 +1,4 @@
-@media (max-width: 767px)
+@media (max-width: 768px)
 	.header
 		&__logo
 			width: 180px
@@ -20,8 +20,10 @@
 			align-items: center
 	.carousel
 		&__inner
-			img
-				width: 100%
+			max-width:100%
+	.catalog
+		&__content
+			justify-content: space-evenly
 @media (max-width: 575px)	
 	.header
 		&__official
@@ -36,6 +38,9 @@
 				font-size: 20px
 		&__icons
 			width: 100%
+	.catalog
+		&__tab
+			font-size: 14px
 	.consultation
 		.title
 			&_left
@@ -48,10 +53,17 @@
 			button
 				height: 40px
 				font-size: 14px
-	.carousel
-		&__inner
-			img 
-				width: 100%
+@media (max-width: 430px)
+	.catalog
+		&__tab
+			font-size: 10px
+		h2
+			.title
+				font-size: 28px
+
+
+
+
 
 
 

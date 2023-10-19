@@ -263,9 +263,12 @@
   padding: 81px 0 81px;
 }
 .carousel__inner {
-  width: 764px;
+  width: 750px;
   margin: 0 auto;
   position: relative;
+}
+.carousel__inner img {
+  width: 100%;
 }
 .carousel .slick-prev, .carousel .slick-next {
   border: none;
@@ -487,7 +490,7 @@
   color: #c70101;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header__logo {
     width: 180px;
   }
@@ -519,8 +522,13 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .carousel__inner img {
-    width: 100%;
+  .carousel__inner {
+    max-width: 100%;
+  }
+  .catalog__content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 @media (max-width: 575px) {
@@ -539,6 +547,9 @@
   .promo__icons {
     width: 100%;
   }
+  .catalog__tab {
+    font-size: 14px;
+  }
   .consultation .title_left {
     font-size: 26px;
   }
@@ -552,7 +563,12 @@
     height: 40px;
     font-size: 14px;
   }
-  .carousel__inner img {
-    width: 100%;
+}
+@media (max-width: 430px) {
+  .catalog__tab {
+    font-size: 10px;
+  }
+  .catalog h2 .title {
+    font-size: 28px;
   }
 }
