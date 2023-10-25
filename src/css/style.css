@@ -513,18 +513,84 @@
 .feed__subtitle {
   color: #0d0d0d;
   font-size: 18px;
-  font-weight: 700;
+  font-family: "Museo Sans Cyrl 700";
 }
 .feed__count {
   color: #646464;
   font-size: 14px;
-  font-weight: 500;
+  font-family: "Museo Sans Cyrl 500";
 }
 .feed__descr {
   color: #0d0d0d;
   font-size: 16px;
-  font-weight: 300;
+  font-family: "Museo Sans Cyrl 300";
   margin-top: 10px;
+}
+
+.footer {
+  height: 630px;
+  position: relative;
+}
+.footer__info {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 270px;
+  background-color: #c70101;
+  padding: 50px 60px 60px 68px;
+}
+.footer__addr {
+  color: #FFF;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 20px;
+  margin-bottom: 36px;
+  line-height: 20px;
+}
+.footer__phone {
+  display: block;
+  color: #FFF;
+  font-size: 20px;
+  margin-bottom: 38px;
+  font-family: "Museo Sans Cyrl 700";
+  text-align: center;
+  line-height: 20px;
+}
+.footer__phone:hover {
+  color: #fff;
+}
+.footer__social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 100%;
+  margin: 0 15px;
+}
+.footer__social-item img {
+  height: 27px;
+  color: #fff;
+}
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -567,6 +633,22 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .feed__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feed__img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 575px) {
   .header__official {
@@ -607,5 +689,14 @@
   }
   .catalog h2 .title {
     font-size: 28px;
+  }
+  .feed__subtitle {
+    font-size: 16px;
+  }
+  .feed__count {
+    font-size: 12px;
+  }
+  .feed__descr {
+    font-size: 14px;
   }
 }
