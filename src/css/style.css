@@ -258,6 +258,9 @@
 .feed-form input:nth-child(3) {
   margin-bottom: 20px;
 }
+.feed-form_mt25 {
+  margin-top: 25px;
+}
 
 .carousel {
   padding: 81px 0 81px;
@@ -593,6 +596,57 @@
           align-items: center;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+.modal-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 380px;
+  min-height: 400px;
+  background-color: #f2f2f2;
+  padding: 38px 40px 40px 40px;
+}
+.modal-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 41px;
+  line-height: 21px;
+  color: #c70101;
+  cursor: pointer;
+}
+.modal-modal__subtitle {
+  color: #0D0D0D;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 18px;
+  line-height: 19px;
+}
+.modal-modal__descr {
+  color: #0D0D0D;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 14px;
+  line-height: 14px;
+}
+.modal-modal_mini {
+  min-height: 140px;
+}
+
+#consultation, #order, #thanks {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header__logo {
     width: 180px;
@@ -697,6 +751,23 @@
     font-size: 12px;
   }
   .feed__descr {
+    font-size: 14px;
+  }
+  .modal-modal {
+    width: 310px;
+    min-height: 400px;
+  }
+  .modal-modal__subtitle {
+    font-size: 14px;
+  }
+  .modal-modal__descr {
+    font-size: 10px;
+  }
+  .feed-form_media {
+    width: 100%;
+    height: 100%;
+  }
+  .button_media {
     font-size: 14px;
   }
 }
