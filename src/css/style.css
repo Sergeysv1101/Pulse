@@ -213,6 +213,16 @@
   font-size: 20px;
   line-height: 30px;
 }
+.consultation .error {
+  border: 1px solid #ff0000;
+}
+.consultation label.error {
+  color: #fff;
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
 
 .title {
   color: #0d0d0d;
@@ -641,6 +651,15 @@
 }
 .modal-modal_mini {
   min-height: 140px;
+}
+.modal-modal .error {
+  border: 1px solid #ff0000;
+}
+.modal-modal label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 13px;
 }
 
 #consultation, #order, #thanks {
