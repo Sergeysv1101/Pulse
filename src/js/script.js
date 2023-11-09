@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	$('.carousel__inner').slick({
 		speed: 1200,
+        autoplay: true,
+        autoplaySpeed: 3000,
 		//adaptiveHeight: true,
 		prevArrow: '<button type="button" class="slick-prev"><img src="../img/slide/left-solid.svg"></button>',
 		nextArrow: '<button type="button" class="slick-next"><img src="../img/slide/right-solid.svg"></button>',
@@ -103,5 +105,31 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    // Smooth scroll and pageup
+    
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut(); 
+        }
+    })
+
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+
+    new WOW().init();
 });
 		  
